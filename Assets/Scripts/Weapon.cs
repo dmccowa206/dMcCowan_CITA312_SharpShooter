@@ -5,7 +5,9 @@ public class Weapon : MonoBehaviour
 {
     [SerializeField] int damageAmount = 1;
     [SerializeField] ParticleSystem muzzleFlash;
+    [SerializeField] Animator animator;
     StarterAssetsInputs starterAssetsInputs;
+    const string SHOOT_STRING = "Shoot";
     void Awake()
     {
         starterAssetsInputs = GetComponentInParent<StarterAssetsInputs>();
@@ -21,6 +23,8 @@ public class Weapon : MonoBehaviour
         if (!starterAssetsInputs.shoot) return;
 
         muzzleFlash.Play();
+        animator.Play(SHOOT_STRING, 0, 0f);
+        starterAssetsInputs.ShootInput(false);
 
         RaycastHit hit;
 
@@ -29,6 +33,5 @@ public class Weapon : MonoBehaviour
             EnemyHealth enemyHealth = hit.collider.GetComponent<EnemyHealth>();
             enemyHealth?.TakeDamage(damageAmount);
         }
-        starterAssetsInputs.ShootInput(false);
     }
 }
