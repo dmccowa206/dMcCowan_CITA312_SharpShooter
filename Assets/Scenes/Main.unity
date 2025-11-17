@@ -566,6 +566,7 @@ MonoBehaviour:
   damageAmount: 1
   muzzleFlash: {fileID: 4665407867240069730}
   animator: {fileID: 1850561923}
+  hitVFXPrefab: {fileID: 5618457475324368486, guid: 31b148dc534f15e4782e331813a2f178, type: 3}
 --- !u!1001 &782678166
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2413,22 +2414,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 573755623}
     m_Modifications:
-    - target: {fileID: 1801217231304189778, guid: 6d7ab2051c3ef8a4694c89b07a7abb66, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: f1b0fea076fb0574d868f6e3d9523f52, type: 2}
-    - target: {fileID: 2881429040936169229, guid: 6d7ab2051c3ef8a4694c89b07a7abb66, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 2881429040936169229, guid: 6d7ab2051c3ef8a4694c89b07a7abb66, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 2881429040936169229, guid: 6d7ab2051c3ef8a4694c89b07a7abb66, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.05
-      objectReference: {fileID: 0}
     - target: {fileID: 2881429040936169229, guid: 6d7ab2051c3ef8a4694c89b07a7abb66, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.19990002
@@ -2468,58 +2453,6 @@ PrefabInstance:
     - target: {fileID: 2881429040936169229, guid: 6d7ab2051c3ef8a4694c89b07a7abb66, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2881429040936169229, guid: 6d7ab2051c3ef8a4694c89b07a7abb66, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4288344752117548429, guid: 6d7ab2051c3ef8a4694c89b07a7abb66, type: 3}
-      propertyPath: playOnAwake
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4288344752117548429, guid: 6d7ab2051c3ef8a4694c89b07a7abb66, type: 3}
-      propertyPath: scalingMode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4288344752117548429, guid: 6d7ab2051c3ef8a4694c89b07a7abb66, type: 3}
-      propertyPath: ShapeModule.type
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4288344752117548429, guid: 6d7ab2051c3ef8a4694c89b07a7abb66, type: 3}
-      propertyPath: moveWithTransform
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4288344752117548429, guid: 6d7ab2051c3ef8a4694c89b07a7abb66, type: 3}
-      propertyPath: ShapeModule.radiusThickness
-      value: 1.0000
-      objectReference: {fileID: 0}
-    - target: {fileID: 4288344752117548429, guid: 6d7ab2051c3ef8a4694c89b07a7abb66, type: 3}
-      propertyPath: InitialModule.startSpeed.scalar
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 4288344752117548429, guid: 6d7ab2051c3ef8a4694c89b07a7abb66, type: 3}
-      propertyPath: InitialModule.startLifetime.scalar
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 4288344752117548429, guid: 6d7ab2051c3ef8a4694c89b07a7abb66, type: 3}
-      propertyPath: ColorModule.gradient.maxGradient.key1.b
-      value: 0.5613208
-      objectReference: {fileID: 0}
-    - target: {fileID: 4288344752117548429, guid: 6d7ab2051c3ef8a4694c89b07a7abb66, type: 3}
-      propertyPath: ColorModule.gradient.maxGradient.key1.g
-      value: 0.92180157
-      objectReference: {fileID: 0}
-    - target: {fileID: 4288344752117548429, guid: 6d7ab2051c3ef8a4694c89b07a7abb66, type: 3}
-      propertyPath: ColorModule.gradient.maxGradient.key1.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4288344752117548429, guid: 6d7ab2051c3ef8a4694c89b07a7abb66, type: 3}
-      propertyPath: ColorModule.gradient.maxGradient.m_ColorSpace
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4288344752117548429, guid: 6d7ab2051c3ef8a4694c89b07a7abb66, type: 3}
-      propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.scalar
-      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 4929244788664273129, guid: 6d7ab2051c3ef8a4694c89b07a7abb66, type: 3}
       propertyPath: m_Name

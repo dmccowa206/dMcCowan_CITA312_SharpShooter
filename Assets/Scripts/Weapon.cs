@@ -6,6 +6,7 @@ public class Weapon : MonoBehaviour
     [SerializeField] int damageAmount = 1;
     [SerializeField] ParticleSystem muzzleFlash;
     [SerializeField] Animator animator;
+    [SerializeField] GameObject hitVFXPrefab;
     StarterAssetsInputs starterAssetsInputs;
     const string SHOOT_STRING = "Shoot";
     void Awake()
@@ -32,6 +33,7 @@ public class Weapon : MonoBehaviour
         {
             EnemyHealth enemyHealth = hit.collider.GetComponent<EnemyHealth>();
             enemyHealth?.TakeDamage(damageAmount);
+            Instantiate(hitVFXPrefab, hit.point, Quaternion.identity);
         }
     }
 }
